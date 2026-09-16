@@ -1,0 +1,161 @@
+:root {
+    --primary-color: #1b365d;
+    --secondary-color: #000000;
+    --accent-color: #f4f6f8;
+    --text-color: #333333;
+    --light-text: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#course-title {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+nav {
+    background-color: var(--secondary-color);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    color: var(--light-text);
+    text-decoration: none;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #444444;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+main h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--light-text);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    margin: 0;
+    padding: 0.75rem 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+.about-content img {
+    width: 150px;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.location-section {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.location-section h3 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.resources-list {
+    list-style-type: disc;
+    padding: 1.5rem 2rem;
+    margin: 0;
+}
+
+.resources-list li {
+    margin-bottom: 0.75rem;
+}
+
+.resources-list a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.resources-list a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+#lastModified {
+    color: #ffeb3b;
+}
+
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+}

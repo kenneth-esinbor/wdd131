@@ -1,0 +1,65 @@
+body {
+    float: left;
+    width: 100%;
+    margin: 0;
+}
+
+header {
+    float: left;
+    width: 100%;
+    min-height: 100px;
+    background-color: #333333;
+}
+
+header p {
+    color: #ffffff;
+    text-align: left;
+    padding: 20px 0;
+    margin: 10px;
+}
+
+ul {
+    float: left;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+ul li {
+    float: left;
+    width: 25%; /* Changed from 20% to 25% so 4 items fill the 100% width evenly */
+    text-align: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    float: left;
+    width: 70%;
+    min-height: 400px;
+    background-color: #cccaca;
+}
+
+aside {
+    float: left;
+    width: 30%;
+    min-height: 400px;
+    background-color: #ffffff; /* Removed the stray quote here */
+}
+
+footer {
+    float: left;
+    width: 100%;
+    min-height: 100px;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center; /* Centers the footer text like in the image */
+}
