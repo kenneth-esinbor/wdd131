@@ -49,25 +49,25 @@ const temples = [
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
   {
+    templeName: "Boise Idaho",
+    location: "Boise, Idaho, United States",
+    dedicated: "1984, May, 25",
+    area: 35868,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/boise-idaho/400x250/boise-idaho-temple-exterior-1033327-wallpaper.jpg"
+  },
+  {
+    templeName: "Provo City Center",
+    location: "Provo, Utah, United States",
+    dedicated: "2016, March, 20",
+    area: 85084,
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/provo-city-center-temple/2016/400x250/provo-city-center-temple-1531885.jpg"
+  },
+  {
     templeName: "Salt Lake",
     location: "Salt Lake City, Utah, United States",
     dedicated: "1893, April, 6",
     area: 253015,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/2018/400x250/salt-lake-temple-37762.jpg"
-  },
-  {
-    templeName: "Rome Italy",
-    location: "Rome, Italy",
-    dedicated: "2019, March, 10",
-    area: 41010,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/2019/400x250/rome-italy-temple-1090342.jpg"
-  },
-  {
-    templeName: "Colonia Juárez Chihuahua Mexico",
-    location: "Colonia Juárez, Chihuahua, Mexico",
-    dedicated: "1999, March, 6",
-    area: 6800,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/colonia-juarez-mexico/400x250/colonia-juarez-mexico-temple-mormon-1064567-wallpaper.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/1980/400x250/salt-lake-temple-773539.jpg"
   }
 ];
 
@@ -96,27 +96,32 @@ function displayTemples(filteredTemples, titleText) {
 // Initial load
 displayTemples(temples, "Home");
 
-// Filter event listeners
-document.querySelector("#home").addEventListener("click", () => {
+// Filter event listeners (using preventDefault for anchor links)
+document.querySelector("#home").addEventListener("click", (e) => {
+  e.preventDefault();
   displayTemples(temples, "Home");
 });
 
-document.querySelector("#old").addEventListener("click", () => {
+document.querySelector("#old").addEventListener("click", (e) => {
+  e.preventDefault();
   let oldTemples = temples.filter(temple => parseInt(temple.dedicated.split(",")[0]) < 1900);
   displayTemples(oldTemples, "Old Temples (Built before 1900)");
 });
 
-document.querySelector("#new").addEventListener("click", () => {
+document.querySelector("#new").addEventListener("click", (e) => {
+  e.preventDefault();
   let newTemples = temples.filter(temple => parseInt(temple.dedicated.split(",")[0]) > 2000);
   displayTemples(newTemples, "New Temples (Built after 2000)");
 });
 
-document.querySelector("#large").addEventListener("click", () => {
+document.querySelector("#large").addEventListener("click", (e) => {
+  e.preventDefault();
   let largeTemples = temples.filter(temple => temple.area > 90000);
   displayTemples(largeTemples, "Large Temples (> 90,000 sq ft)");
 });
 
-document.querySelector("#small").addEventListener("click", () => {
+document.querySelector("#small").addEventListener("click", (e) => {
+  e.preventDefault();
   let smallTemples = temples.filter(temple => temple.area < 10000);
   displayTemples(smallTemples, "Small Temples (< 10,000 sq ft)");
 });
