@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Planning Document - Local Coffee Shop & Café Guide</title>
+    <meta name="description" content="Website planning document for the Local Coffee Shop and Café Guide project.">
+    <meta name="author" content="Kenneth Esinbor">
+    <link rel="stylesheet" href="siteplan.css">
+</head>
+<body>
+    <header>
+        <h1>Website Planning Document</h1>
+        <h2>Local Coffee Shop & Café Guide</h2>
+        <p>Kenneth Esinbor</p>
+    </header>
+
+    <main>
+        <!-- SECTION 1: SITE NAME -->
+        <section>
+            <h2>1. Site Name</h2>
+            <p><strong>Proposed Site Name:</strong> Local Coffee Shop & Café Guide</p>
+            <p><strong>Description:</strong> This name is professional and instantly communicates to visitors that the site is a curated collection or guide focused on discovering local coffee houses.</p>
+            <p><em>Optional domain availability:</em> local-coffee-guide.org</p>
+        </section>
+
+        <!-- SECTION 2: SITE PURPOSE -->
+        <section>
+            <h2>2. Site Purpose</h2>
+            <p>A responsive three-page website dedicated to exploring local coffee shops. It features a Home page with an overview, a Cafes page showcasing a dynamic catalog of local spots powered by JavaScript objects and arrays with filtering capabilities, and a Contact/Review page with an interactive form that saves user feedback using localStorage. A separate unstyled references page will be linked in the footer.</p>
+        </section>
+
+        <!-- SECTION 3: SCENARIOS -->
+        <section>
+            <h2>3. Target Audience Scenarios</h2>
+            <ul>
+                <li>What are the highest-rated local coffee shops near me that offer specialty drinks and great atmospheres?</li>
+                <li>Where can I find the review form to submit feedback or recommend a new local café?</li>
+            </ul>
+        </section>
+
+        <!-- SECTION 4: COLOR SCHEMA -->
+        <section>
+            <h2>4. Color Schema</h2>
+            <p>The chosen color palette reflects a warm, inviting coffeehouse aesthetic:</p>
+            <div class="color-palette">
+                <div class="color-box primary">Primary: #3D2314 (Dark Roast Brown) - Used for headers, navigation, and primary text.</div>
+                <div class="color-box secondary">Secondary: #D2B48C (Tan / Warm Latte) - Used for backgrounds, card borders, and accents.</div>
+                <div class="color-box accent">Accent: #C68B59 (Caramel) - Used for hover states, buttons, and highlights.</div>
+                <div class="color-box light">Background: #FDFBF7 (Cream White) - Main page background color.</div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: TYPOGRAPHY -->
+        <section>
+            <h2>5. Typography</h2>
+            <p>We will use up to two clean, readable web fonts:</p>
+            <ul>
+                <li><strong>Heading Font:</strong> <em>Merriweather</em> or Georgia (Serif) – Applied to all <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, and <code>&lt;h3&gt;</code> elements for an elegant, editorial feel.</li>
+                <li><strong>Body Font:</strong> <em>Roboto</em> or Arial (Sans-serif) – Applied to paragraphs, navigation, and form elements for clean readability.</li>
+            </ul>
+        </section>
+
+        <!-- SECTION 6: WIREFRAMES -->
+        <section>
+            <h2>6. Wireframes</h2>
+            <p>Below are basic layouts representing the mobile and desktop views of the Home page.</p>
+            
+            <div class="wireframes-container">
+                <div class="wireframe-box">
+                    <h3>Mobile View</h3>
+                    <div class="mockup mobile-mockup">
+                        <div class="m-header">Header / Nav Menu</div>
+                        <div class="m-hero">Hero Image & Title</div>
+                        <div class="m-content">Featured Content Cards</div>
+                        <div class="m-footer">Footer</div>
+                    </div>
+                </div>
+
+                <div class="wireframe-box">
+                    <h3>Desktop View</h3>
+                    <div class="mockup desktop-mockup">
+                        <div class="d-header">Header Logo & Horizontal Nav Menu</div>
+                        <div class="d-hero">Wide Hero Banner & Welcome Text</div>
+                        <div class="d-content-grid">
+                            <div class="d-card">Card 1</div>
+                            <div class="d-card">Card 2</div>
+                            <div class="d-card">Card 3</div>
+                        </div>
+                        <div class="d-footer">Footer & References Link</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Kenneth Esinbor | Port Harcourt</p>
+    </footer>
+    <script>
+        document.querySelector("#currentyear").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
