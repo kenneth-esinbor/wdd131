@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form</title>
-    <meta name="description" content="Product review form for W05 assignment.">
+    <meta name="description" content="Complete this product review form to share your feedback, ratings, installation date, and useful feature selections for our products.">
     <meta name="author" content="Kenneth Esinbor">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
@@ -21,7 +21,7 @@
             <div class="field">
                 <label for="productName">Product Name <span class="required">*</span></label>
                 <select id="productName" name="productName" required>
-                    <option value="" disabled selected>Choose a Product ...</option>
+                    <option value="" disabled selected>Select a Product ...</option>
                 </select>
             </div>
 
@@ -62,10 +62,18 @@
             <fieldset class="field">
                 <legend>Which features did you find useful in the product? <br><span class="subtext">(Check all that apply)</span></legend>
                 <div class="checkbox-group">
-                    <label><input type="checkbox" name="features" value="durability"> Durability</label>
-                    <label><input type="checkbox" name="features" value="easeOfUse"> Ease of Use</label>
-                    <label><input type="checkbox" name="features" value="performance"> Performance</label>
-                    <label><input type="checkbox" name="features" value="design"> Design</label>
+                    <label for="feature-durability">
+                        <input type="checkbox" id="feature-durability" name="features" value="durability"> Durability
+                    </label>
+                    <label for="feature-ease">
+                        <input type="checkbox" id="feature-ease" name="features" value="easeOfUse"> Ease of Use
+                    </label>
+                    <label for="feature-perf">
+                        <input type="checkbox" id="feature-perf" name="features" value="performance"> Performance
+                    </label>
+                    <label for="feature-design">
+                        <input type="checkbox" id="feature-design" name="features" value="design"> Design
+                    </label>
                 </div>
             </fieldset>
 

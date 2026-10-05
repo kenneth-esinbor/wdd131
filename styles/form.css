@@ -187,3 +187,14 @@ footer {
     padding: 1rem;
     font-size: 0.9rem;
 }
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 600px) {
+    .review-form {
+        padding: 1rem;
+    }
+    
+    .stars-container {
+        gap: 0.5rem;
+    }
+}
