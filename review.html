@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <meta name="description" content="Confirmation page for submitted product reviews.">
+    <meta name="author" content="Kenneth Esinbor">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/review.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Review Submitted!</h1>
+    </header>
+
+    <main class="confirmation-main">
+        <div class="confirmation-box">
+            <h2>Thank you for your feedback!</h2>
+            <p>Your review has been successfully recorded.</p>
+            <p class="counter-display">Total reviews submitted: <span id="reviewsCount">0</span></p>
+            <a href="form.html" class="back-link">Submit Another Review</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Kenneth Esinbor | Port Harcourt</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

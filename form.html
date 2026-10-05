@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Product review form for W05 assignment.">
+    <meta name="author" content="Kenneth Esinbor">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html" class="review-form">
+            
+            <!-- Product Name -->
+            <div class="field">
+                <label for="productName">Product Name <span class="required">*</span></label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Choose a Product ...</option>
+                </select>
+            </div>
+
+            <!-- Overall Rating -->
+            <fieldset class="field rating-field">
+                <legend>Overall Rating <span class="required">*</span></legend>
+                <div class="stars-container">
+                    <div class="star-group">
+                        <label for="star1">&#9734;</label>
+                        <input type="radio" id="star1" name="rating" value="1" required>
+                    </div>
+                    <div class="star-group">
+                        <label for="star2">&#9734;&#9734;</label>
+                        <input type="radio" id="star2" name="rating" value="2" required>
+                    </div>
+                    <div class="star-group">
+                        <label for="star3">&#9734;&#9734;&#9734;</label>
+                        <input type="radio" id="star3" name="rating" value="3" required>
+                    </div>
+                    <div class="star-group">
+                        <label for="star4">&#9734;&#9734;&#9734;&#9734;</label>
+                        <input type="radio" id="star4" name="rating" value="4" required>
+                    </div>
+                    <div class="star-group">
+                        <label for="star5">&#9734;&#9734;&#9734;&#9734;&#9734;</label>
+                        <input type="radio" id="star5" name="rating" value="5" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Date of Installation -->
+            <div class="field">
+                <label for="installDate">Date of Installation <span class="required">*</span></label>
+                <input type="date" id="installDate" name="installDate" required>
+            </div>
+
+            <!-- Useful Features -->
+            <fieldset class="field">
+                <legend>Which features did you find useful in the product? <br><span class="subtext">(Check all that apply)</span></legend>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="features" value="durability"> Durability</label>
+                    <label><input type="checkbox" name="features" value="easeOfUse"> Ease of Use</label>
+                    <label><input type="checkbox" name="features" value="performance"> Performance</label>
+                    <label><input type="checkbox" name="features" value="design"> Design</label>
+                </div>
+            </fieldset>
+
+            <!-- Written Review -->
+            <div class="field">
+                <label for="writtenReview">Written Review <span class="optional">(Optional)</span></label>
+                <textarea id="writtenReview" name="writtenReview" rows="4"></textarea>
+            </div>
+
+            <!-- User Name -->
+            <div class="field">
+                <label for="userName">Your Name <span class="optional">(Optional)</span></label>
+                <input type="text" id="userName" name="userName">
+            </div>
+
+            <!-- Submit Button -->
+            <div class="field submit-btn-container">
+                <input type="submit" value="Post Review">
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Kenneth Esinbor | Port Harcourt</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

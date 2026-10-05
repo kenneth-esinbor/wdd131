@@ -1,0 +1,189 @@
+:root {
+    --primary-color: #3b1443;
+    --bg-color: #f5f3f7;
+    --card-bg: #e2dce6;
+    --text-color: #2b2b2b;
+    --accent-color: #5c2168;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.review-form {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.field {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.field label, .field legend {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+fieldset.field {
+    border: none;
+    padding: 0;
+}
+
+.required {
+    color: #b30000;
+}
+
+.optional, .subtext {
+    font-weight: normal;
+    font-size: 0.85rem;
+    color: #555;
+    font-style: italic;
+}
+
+select, input[type="date"], input[type="text"], textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: white;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.stars-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    background: white;
+    padding: 0.75rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.star-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: white;
+    padding: 0.75rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.submit-btn-container input[type="submit"] {
+    background-color: white;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.submit-btn-container input[type="submit"]:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Confirmation Page Styles */
+.confirmation-main {
+    text-align: center;
+}
+
+.confirmation-box {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 450px;
+    width: 100%;
+}
+
+.confirmation-box h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.counter-display {
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    background-color: var(--accent-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
