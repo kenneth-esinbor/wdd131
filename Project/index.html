@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Local Coffee Shop & Café Guide</title>
+    <meta name="description" content="Welcome to the Local Coffee Shop & Café Guide. Discover top-rated local cafes, specialty brews, and cozy atmospheres in your area.">
+    <meta name="author" content="Kenneth Esinbor">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-area">
+            <h1>Local Coffee Guide</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="cafes.html">Cafés</a></li>
+                <li><a href="contact.html">Contact & Review</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Discover Your Next Favorite Brew</h2>
+                <p>Explore hand-curated local coffee shops, specialty roasters, and cozy spaces designed for work, relaxation, and great conversation.</p>
+                <a href="cafes.html" class="cta-btn">Explore Cafés</a>
+            </div>
+        </section>
+
+        <section class="features-overview container">
+            <h2>Why Support Local Cafés?</h2>
+            <div class="cards-grid">
+                <article class="card">
+                    <h3>Artisan Quality</h3>
+                    <p>Experience expertly crafted espresso, single-origin pour-overs, and custom signature drinks made by passionate baristas.</p>
+                </article>
+                <article class="card">
+                    <h3>Vibrant Community</h3>
+                    <p>Local coffee houses serve as cultural hubs where creators, remote workers, and friends connect every single day.</p>
+                </article>
+                <article class="card">
+                    <h3>Unique Ambience</h3>
+                    <p>Step away from corporate chains and enjoy distinct interior designs, local artwork, and welcoming neighborhood vibes.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="spotlight container">
+            <h2>Featured Spot</h2>
+            <div id="spotlight-container" class="spotlight-card">
+                <!-- Dynamically populated via script.js -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Kenneth Esinbor | Port Harcourt</p>
+        <p><a href="references.html">References & Attributions</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

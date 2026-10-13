@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Catalog - Local Coffee Shop & Café Guide</title>
+    <meta name="description" content="Browse our dynamic catalog of local coffee shops, filter by rating or vibe, and find your ideal café spot.">
+    <meta name="author" content="Kenneth Esinbor">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-area">
+            <h1>Local Coffee Guide</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cafes.html" class="active">Cafés</a></li>
+                <li><a href="contact.html">Contact & Review</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="catalog-header">
+            <h2>Explore Local Cafés</h2>
+            <p>Use the filter buttons below to sort our curated directory of coffee shops based on your preferences.</p>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Cafés</button>
+                <button class="filter-btn" data-filter="cozy">Cozy & Quiet</button>
+                <button class="filter-btn" data-filter="roast">Specialty Roast</button>
+                <button class="filter-btn" data-filter="top">Top Rated (4.8+)</button>
+            </div>
+        </section>
+
+        <section id="cafes-grid" class="cafes-grid">
+            <!-- Dynamically populated via script.js using arrays and template literals -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Kenneth Esinbor | Port Harcourt</p>
+        <p><a href="references.html">References & Attributions</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
